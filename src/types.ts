@@ -11,9 +11,15 @@ export interface Image {
     portfolio_url: string;
     instagram_username: string;
   };
+  url: string;
+  alt: string;
+  author: string;
+  portfolio: string;
+  instagram: string;
 }
 
 export interface FetchImagesResponse {
   results: Image[];
   total_pages: number;
 }
+

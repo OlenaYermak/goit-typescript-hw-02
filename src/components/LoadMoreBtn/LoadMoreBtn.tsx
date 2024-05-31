@@ -1,40 +1,13 @@
-import style from "./LoadMoreBtn.module.css"
+import style from './LoadMoreBtn.module.css';
 
-export default function LoadMoreBtn({ onLoadMore }) {
-    return (
-        
-        <button className={style.loadMoreBtn} onClick={onLoadMore} type="button">Load more</button>
-    )
+interface LoadMoreBtnProps {
+  onLoadMore: () => void;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// import React from 'react';
-// import style from './LoadMoreBtn.module.css';
-
-// interface LoadMoreBtnProps {
-//   onLoadMore: () => void;
-// }
-
-// const LoadMoreBtn: React.FC<LoadMoreBtnProps> = ({ onLoadMore }) => {
-//   return (
-//     <button className={style.loadMoreBtn} onClick={onLoadMore} type="button">
-//       Load more
-//     </button>
-//   );
-// };
-
-// export default LoadMoreBtn;
+export default function LoadMoreBtn({ onLoadMore }: LoadMoreBtnProps) {
+  return (
+    <button className={style.loadMoreBtn} onClick={onLoadMore} type="button">
+      Load more
+    </button>
+  );
+}
